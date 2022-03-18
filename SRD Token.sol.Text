@@ -20,7 +20,7 @@ pragma solidity ^0.4.24;
 // ----------------------------------------------------------------------------
 contract SafeMath {
 
-    function safeAdd(uint a, uint b) public pure returns (uint c) { // ผลตอบแทนสาธารณะที่บริสุทธิ์
+    function safeAdd(uint a, uint b) public pure returns (uint c) { 
         c = a + b;
         require(c >= a);
     }
@@ -70,7 +70,7 @@ contract ApproveAndCallFallBack {
 /**
 ERC20 Token, with the addition of symbol, name and decimals and assisted token transfers
 */
-contract SRDToken is ERC20Interface, SafeMath {
+contract SRDToken is ERC20Interface, SafeMath { //สัญญา
     string public symbol;
     string public  name;
     uint8 public decimals;
